@@ -1,0 +1,18 @@
+.footerContainer{
+  min-height: 200px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-content: flex-end;
+}
+
+.copyrightText{
+  width: fit-content;
+  margin: auto;
+}

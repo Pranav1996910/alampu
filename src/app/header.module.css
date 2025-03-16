@@ -1,0 +1,42 @@
+.logo {
+  width: 100px;
+  height: auto
+}
+
+.logoContainer{
+  width: 10%;
+}
+
+.navBarContainer{
+  width: 80%;
+  margin: auto;
+  padding: 20 0 20 0;
+}
+
+.headerContainer {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.218);
+}
+
+.navBarContainerDesktop{
+  display: flex;
+  margin: auto;
+}
+
+.navList{
+  display: flex;
+  font-size: 25px;
+  height: 65px;
+  margin: auto;
+  justify-content: space-around;
+  font-weight: lighter;
+}
+
+.navItem{
+  text-decoration: none;
+  list-style: none;
+  align-content: center;
+}
+
+.menuContainer{
+  width: 90%;
+}
