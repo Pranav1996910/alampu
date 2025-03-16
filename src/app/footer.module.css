@@ -1,18 +1,51 @@
 .footerContainer{
-  min-height: 200px;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
-  position: relative;
+  padding: 40 0 20 0;
+  display: flex;
+}
+
+.footerMainContainer{
+  background-color: #EAEDE8;
+  min-height: 120px;
 }
 
 .copyright{
-  position: absolute;
-  bottom: 0;
   width: 100%;
   align-content: flex-end;
+  padding-top: 40px;
 }
 
 .copyrightText{
   width: fit-content;
   margin: auto;
+  font-size: 16px;
+  color: #878787;
+}
+
+.socialMain{
+  display: flex;
+}
+
+.logo{
+  width: 120px;
+  height: auto
+}
+
+.logoContainer{
+  width: 10%;
+}
+
+.socialIcon{
+  font-size: 30px;
+  margin: 0 8 0 8;
+}
+.footerLinks{
+  margin: 30 0 30 0;
+}
+.feedbackLink{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5 10 5 10;
 }

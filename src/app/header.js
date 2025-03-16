@@ -19,18 +19,13 @@ export default function Header() {
           <div className={styles.menuContainer}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link href="/" className="hover:text-gray-300">
-                  Home
-                </Link>
-              </li>
-              <li className={styles.navItem}>
                 <Link href="/about" className="hover:text-gray-300">
-                  About Us
+                  About us
                 </Link>
               </li>
               <li className={styles.navItem}>
                 <Link href="/contact" className="hover:text-gray-300">
-                  Contact
+                  Career
                 </Link>
               </li>
             </ul>

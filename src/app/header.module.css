@@ -1,5 +1,5 @@
 .logo {
-  width: 100px;
+  width: 80px;
   height: auto
 }
 
@@ -10,24 +10,25 @@
 .navBarContainer{
   width: 80%;
   margin: auto;
-  padding: 20 0 20 0;
+  padding: 5 0 5 0;
 }
 
 .headerContainer {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.218);
+  border-bottom: 2px solid #d4d4d4;
 }
 
 .navBarContainerDesktop{
   display: flex;
   margin: auto;
+  justify-content: space-between;
 }
 
 .navList{
   display: flex;
-  font-size: 25px;
-  height: 65px;
+  font-size: 20px;
+  height: 60px;
   margin: auto;
-  justify-content: space-around;
+  float: right;
   font-weight: lighter;
 }
 
@@ -35,6 +36,7 @@
   text-decoration: none;
   list-style: none;
   align-content: center;
+  margin: 0 10 0 10;
 }
 
 .menuContainer{
