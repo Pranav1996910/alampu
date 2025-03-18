@@ -47,9 +47,9 @@
   border-radius: 5px;
   padding: 5 10 5 10;
   margin-right: 10px;
-  vertical-align: super;
+  vertical-align: baseline;
 }
 .icons{
   vertical-align: bottom;
-
+  font-size: 18px;
 }

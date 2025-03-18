@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import EmailIcon from '@mui/icons-material/Email';
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { MdDownload } from "react-icons/md";
 
 export default function Page() {
   return (
@@ -29,21 +29,34 @@ export default function Page() {
         <div className={styles.jobTitle}>
           <p className={styles.positionHeaders}>Job Description:</p>
           <p>
-            <Link className={styles.positionDescription} href="/resume.pdf" rel="noopener noreferrer" target="_blank">
-              Download <FileDownloadIcon className={styles.icons}/>
+            <Link
+              className={styles.positionDescription}
+              href="/resume.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download <MdDownload className={styles.icons} />
             </Link>
           </p>
         </div>
         <div className={styles.jobTitle}>
           <p className={styles.positionHeaders}>Apply:</p>
           <div>
-            <a className={styles.applyLink} href="mailto:alampustore@gmail.com">
-              Email <EmailIcon className={styles.icons}/>
+            <a
+              className={styles.applyLink}
+              rel="noopener noreferrer"
+              href="mailto:alampustore@gmail.com"
+            >
+              Email <MdOutlineEmail className={styles.icons} />
             </a>
           </div>
           <div>
-            <a className={styles.applyLink} href="https://wa.me/7019747023">
-              Whatsapp <WhatsAppIcon className={styles.icons}/>
+            <a
+              className={styles.applyLink}
+              rel="noopener noreferrer"
+              href="https://wa.me/7019747023"
+            >
+              Whatsapp <FaWhatsapp className={styles.icons} />
             </a>
           </div>
         </div>
