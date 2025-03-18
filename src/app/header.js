@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./header.module.css"
+import styles from "./header.module.css";
 
 export default function Header() {
   return (
@@ -8,13 +8,15 @@ export default function Header() {
       <div className={styles.navBarContainer}>
         <nav className={styles.navBarContainerDesktop}>
           <div className={styles.logoContainer}>
-            <Image
-              src="/images/logo-alampu.png"
-              width={100}
-              height={100}
-              className={styles.logo}
-              alt="Alampu logo"
-            />
+            <Link href="/" className={styles.feedbackLink}>
+              <Image
+                src="/images/logo-alampu.png"
+                width={100}
+                height={100}
+                className={styles.logo}
+                alt="Alampu logo"
+              />
+            </Link>
           </div>
           <div className={styles.menuContainer}>
             <ul className={styles.navList}>
@@ -24,8 +26,8 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/contact" className="hover:text-gray-300">
-                  Career
+                <Link href="/careers" className="hover:text-gray-300">
+                  Careers
                 </Link>
               </li>
             </ul>

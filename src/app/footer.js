@@ -29,7 +29,7 @@ export default function Footer() {
             <Link href="/feedback" className={styles.feedbackLink}>Feedback</Link>
           </div>
           <div className={styles.footerLinks}>
-            <Link href="/terms" className={styles.feedbackLink}>Terms & condition</Link>
+            <Link href="/terms" className={styles.feedbackLink}>Terms & Conditions</Link>
           </div>
         </div>
       </footer>

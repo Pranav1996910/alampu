@@ -1,0 +1,55 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 80%;
+  margin: auto;
+
+}
+
+.careersTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 60 0 20 0;
+}
+
+.currentOpeningsTitle{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 60 0 20 0;
+}
+
+.currentOpeningsForm{
+  padding: 30px;
+  background-color: #eaede8;
+  width: fit-content;
+  border-radius: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.jobTitle{
+  display: flex;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.positionHeaders{
+  font-weight: bold;
+  padding-right: 5px;
+}
+.positionDescription{
+  vertical-align: super;
+}
+
+.applyLink{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5 10 5 10;
+  margin-right: 10px;
+  vertical-align: super;
+}
+.icons{
+  vertical-align: bottom;
+
+}

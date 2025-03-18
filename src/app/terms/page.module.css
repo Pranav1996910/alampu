@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 80%;
+  margin: auto;
+
+}
+
+.termsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 60 0 20 0;
+}
+
+.termsDescription{
+  font-size: 14px;
+  line-height: 1.4;
+  list-style-position: inside;
+  padding-bottom: 10svh;
+}
