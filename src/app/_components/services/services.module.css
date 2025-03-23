@@ -52,7 +52,9 @@
 }
 .serviceCardTitle{
   font-size: 18px;
+  margin-top: 5px;
   font-weight: bold;
+  text-align: center;
 }
 .serviceDescription{
   font-size: 14px;
@@ -71,6 +73,25 @@
   padding: 12px 30px 12px 30px;
   justify-content: center;
 }
-.serviceLogo{
 
+@media only screen and (max-width: 992px) {
+  .serviceTitleDiv{
+    margin-top: -60px;
+    width: 80%;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #EAEDE8;
+  }
+  
+  .servicesMain{
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+  }
 }

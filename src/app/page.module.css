@@ -33,6 +33,7 @@
   padding: 10px;
   width: 100%;
   margin-top: 30px;
+  justify-content: center;
 }
 .uinqueGridCell{
   background-color: #EAEDE8;
@@ -53,4 +54,14 @@
 .uniqueIcons{
   font-size: 40px;
   color: #9c1613;
+}
+
+@media only screen and (max-width: 992px) {
+  .mainBody{
+   width: 90%;
+  }
+  .uniqueGrid{
+    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

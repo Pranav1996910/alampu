@@ -5,47 +5,37 @@ export default function Page() {
     <div className={styles.page}>
       <div className={styles.aboutUsTitle}>About Alampu</div>
       <div className={styles.aboutAlampuDescription}>
-        Alampu is your one-stop shop for all your corporate gifting, wedding
-        gifting, and college gifting needs. We strive to deliver some of the
-        best-handpicked premium brand products to your dear ones.
+        At <b>Alampu</b>, we transform gifting into an art. Whether it's
+        corporate milestones, wedding celebrations, or college farewells, we
+        curate premium gifts that leave a lasting impression.
         <br />
         <br />
-        We create the most gratifying shopping experience that is built on
-        authenticity and sustainability. Our products vary from a wide range of
-        thoughtful pieces of art that evoke nostalgia to customized gifting
-        options that will be admired and cherished.
+        Our handpicked selection features top-tier brands and thoughtful,
+        nostalgia-evoking keepsakes, ensuring every gift is meaningful. With a
+        focus on authenticity and sustainability, we make gifting effortless,
+        elegant, and unforgettable.
         <br />
         <br />
-        Alampu also encapsulates the beauty and elegance of local artistry. We
-        curate hand-picked items that embody the stories of rural and
-        not-so-heard parts of India, bringing you the best of our heritage,
-        culture and splendour.
-        <br />
-        <br />
-        We work with an extensive network of local artisans and weavers —
-        bringing you a wide range of hand-picked items including handwoven and
-        naturally dyed fabric. At Alampu, we bring you exquisite pieces of work
-        that serve a purpose and tell a tale.
+        Discover the joy of giving with <b>Alampu</b> — where every gift tells a
+        story.
       </div>
       <div className={styles.meetTeamTitle}>Meet Our Team</div>
       <div className={styles.meetOurTeamDescription}>
-        Alampu started as a collective dream of three engineering friends.
+        Alampu is your one-stop destination for all things gifting—whether it's
+        corporate gifting, wedding favors, college souvenirs, or personal
+        presents. We are a passionate team brought together by our love for
+        craftsmanship and the joy of thoughtful gifting.
         <br />
         <br />
-        At Alampu, we strive to make your gifting journey hassle-free and joyful,
-        by bringing to you a wide range of thoughtful gifting options for your
-        loved ones.
+        Founded by three engineering friends with a shared dream, Alampu is
+        committed to making your gifting experience seamless and delightful. We
+        carefully curate a diverse range of gifts, handling everything from
+        product selection to packaging, delivery, and customer support—all with
+        a personal touch.
         <br />
         <br />
-        Having grown up closely observing the rich Kannada heritage
-        of handloom & handicrafts, we are driven by an aim to bring these
-        timeless pieces of art to the forefront along with the other
-        conventional gifting options.
-        <br />
-        <br />
-        We are currently a small team managing the end-to-end experience right from curating products, pick-up, package,
-        delivery and customer support. We look forward to cherishing all things
-        indigenous with you.
+        As a growing team, we strive to make gifting hassle-free and meaningful.
+        Join us in celebrating the joy of thoughtful gifting!
       </div>
     </div>
   );

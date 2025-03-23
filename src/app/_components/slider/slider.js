@@ -13,6 +13,27 @@ export default function ClientSlider() {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      }
+    ],
   };
 
   return (
@@ -115,6 +136,15 @@ export default function ClientSlider() {
             height={100}
             className={styles.sliderImage}
             alt="Samantha"
+          />
+        </div>
+        <div className={styles.sliderDiv}>
+          <Image
+            src="/clients/i.png"
+            width={100}
+            height={100}
+            className={styles.sliderImage}
+            alt="TalentSoftwareSolutions"
           />
         </div>
       </Slider>

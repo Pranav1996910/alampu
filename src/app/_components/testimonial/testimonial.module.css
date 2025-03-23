@@ -1,3 +1,37 @@
 .testimonialMain{
   margin: 40px 0 40px 0;
+  width: 100%;
+}
+.testimonialSlider{
+  width: 100%;
+}
+.testimonialCardMain{
+  padding: 0px 20px 0px 20px;
+}
+.testimonialCard{
+  display: flex!important;
+  flex-direction: column;
+  padding: 30px;
+  height: 200px;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+}
+.testimonialDescription{
+  font-size: 14px;
+}
+.testimonialBy{
+  float: right;
+  width: fit-content;
+  margin-top: 5px;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .testimonialCard{
+    height: 250px;
+  }
+  .testimonialCardMain{
+    padding: 0px 10px 0px 10px;
+  }
 }

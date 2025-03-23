@@ -68,6 +68,20 @@ export default function Page() {
             <input
               className={styles.inputField}
               type="text"
+              name="dob"
+              id="dob"
+              pattern="^\d{2}-\d{2}-\d{4}$"
+              required
+              placeholder="Example: 13-09-1996"
+            />
+            <label htmlFor="dob" className={styles.labelField}>
+              Date Of Birth
+            </label>
+          </div>
+          <div className={styles.field}>
+            <input
+              className={styles.inputField}
+              type="text"
               name="number"
               id="number"
               required
