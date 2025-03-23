@@ -15,7 +15,7 @@ const Modal = ({ onClose }) => {
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
             <div className={styles.logoContainer}>
-              <Link href="/" className={styles.feedbackLink}>
+              <Link onClick={handleCloseClick} href="/" className={styles.feedbackLink}>
                 <Image
                   src="/images/logo-alampu.png"
                   width={100}

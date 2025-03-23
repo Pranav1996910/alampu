@@ -74,9 +74,12 @@
     margin: auto;
     align-items: center;
   }
+  .contactNavigation{
+    width: 100%;
+  }
   .contactMap{
     width: 100%;
-    height: 50%;
+    height: 60%;
   }
   .contactMain{
     width: 100%;
