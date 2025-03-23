@@ -1,10 +1,10 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
+  min-height: 90svh;
+  padding: 0px 0px 40px 0px;
   width: 80%;
   margin: auto;
-
 }
 
 .careersTitle {
@@ -38,6 +38,7 @@
   font-weight: bold;
   padding-right: 5px;
 }
+
 .positionDescription{
   vertical-align: super;
 }
@@ -49,7 +50,20 @@
   margin-right: 10px;
   vertical-align: baseline;
 }
+
 .icons{
   vertical-align: bottom;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 992px) {
+  .currentOpeningsForm{
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .currentOpeningsForm{
+    padding: 10px;
+  }
 }

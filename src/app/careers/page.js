@@ -46,6 +46,7 @@ export default function Page() {
               className={styles.applyLink}
               rel="noopener noreferrer"
               href="mailto:alampustore@gmail.com"
+              target="_blank"
             >
               Email <MdOutlineEmail className={styles.icons} />
             </a>
@@ -55,6 +56,7 @@ export default function Page() {
               className={styles.applyLink}
               rel="noopener noreferrer"
               href="https://wa.me/7019747023"
+              target="_blank"
             >
               Whatsapp <FaWhatsapp className={styles.icons} />
             </a>

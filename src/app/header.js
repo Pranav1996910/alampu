@@ -1,8 +1,13 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./header.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Modal from "./_components/navmodel/modal";
+import { useState } from "react";
 
 export default function Header() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <header className={styles.headerContainer}>
       <div className={styles.navBarContainer}>
@@ -30,12 +35,39 @@ export default function Header() {
                   Careers
                 </Link>
               </li>
+              <li className={styles.navItem}>
+                <Link href="/contact" className="hover:text-gray-300">
+                  Contact us
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
-        <div className="hidden md:block"></div>
-        {/* Add Mobile Navigation Toggle Here */}
+        <nav className={styles.navBarContainerMobile}>
+          <div className={styles.logoContainer}>
+            <Link href="/" className={styles.feedbackLink}>
+              <Image
+                src="/images/logo-alampu.png"
+                width={100}
+                height={100}
+                className={styles.logo}
+                alt="Alampu logo"
+              />
+            </Link>
+          </div>
+          <div className={styles.menuContainer}>
+            <button className={styles.burgerButton} onClick={() => setShowModal(true)}>
+              <GiHamburgerMenu />
+            </button>
+            {showModal && (
+              <Modal onClose={() => setShowModal(false)}>
+                Hello from the modal!
+              </Modal>
+            )}
+          </div>
+        </nav>
       </div>
+      <div id="modal-root"></div>
     </header>
   );
 }

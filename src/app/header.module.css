@@ -42,3 +42,29 @@
 .menuContainer{
   width: 90%;
 }
+.navBarContainerMobile{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .navBarContainerDesktop{
+    display: none;
+  }
+  .navBarContainerMobile{
+    display: flex;
+  }
+  .logoContainer{
+    width: 50%
+  }
+  .menuContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .burgerButton{
+    background-color: white;
+    border: none;
+    font-size: 40px;
+  }
+}

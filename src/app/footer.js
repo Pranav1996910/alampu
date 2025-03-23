@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -26,13 +27,23 @@ export default function Footer() {
         <div className={styles.footerSection2}>
           <SocialIcons />
           <div className={styles.footerLinks}>
-            <Link href="/feedback" className={styles.feedbackLink}>Feedback</Link>
+            <Link href="/feedback" className={styles.feedbackLink}>
+              Feedback
+            </Link>
           </div>
           <div className={styles.footerLinks}>
-            <Link href="/terms" className={styles.feedbackLink}>Terms & Conditions</Link>
+            <Link href="/terms" className={styles.feedbackLink}>
+              Terms & Conditions
+            </Link>
           </div>
         </div>
       </footer>
+
+      <div className={styles.copyright2}>
+        <p className={styles.copyrightText}>
+          &copy; {new Date().getFullYear()} Alampu. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 }
@@ -66,7 +77,7 @@ function SocialIcons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaTwitter className={styles.socialIcon} />
+        <FaXTwitter className={styles.socialIcon} />
       </a>
     </div>
   );

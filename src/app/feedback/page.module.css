@@ -1,0 +1,217 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 90svh;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEDE8;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+.feedbackTitle {
+  font-size: 24px;
+  width: fit-content;
+  font-weight: bold;
+  margin: 30px 0px 10px 0px;
+}
+
+.formMain {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.submitDiv{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 40px; 
+}
+.submitButton {
+  width: fit-content;
+  cursor: pointer;
+  background-color: #9c1613;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+  padding: 12px 30px 12px 30px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.labelField, .inputField, .addressField, .feedbackInputField {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.inputField {
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: text;
+  border-radius: 8px;
+  padding-left: 10px;
+  width: 100%;
+  resize: vertical;
+  min-height: 40px;
+}
+
+.addressField{
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: text;
+  border-radius: 8px;
+  padding-left: 10px;
+  width: 100%;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.feedbackInputField{
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: text;
+  border-radius: 8px;
+  padding-left: 10px;
+  width: 100%;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.inputField:focus, .addressField:focus, .feedbackInputField:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+.labelField {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  order: -1;
+}
+
+.inputField:placeholder-shown + .labelField {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+}
+
+.addressField:placeholder-shown + .labelField {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+}
+
+.feedbackInputField:placeholder-shown + .labelField {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.inputField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.inputField:not(:placeholder-shown) + .labelField,
+.inputField:focus + .labelField {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+.addressField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.addressField:not(:placeholder-shown) + .labelField,
+.addressField:focus + .labelField {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+.feedbackInputField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.feedbackInputField:not(:placeholder-shown) + .labelField,
+.feedbackInputField:focus + .labelField {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+.labelField::after {
+  content: "*";
+  color: #9c1613;
+}
+.concentCheckbox{
+  transform: scale(1.8);
+  margin-right: 10px;
+  accent-color: #9c1613;
+}
+.concentDiv{
+  margin: 30px 0px 10px 0px;
+  display: flex;
+}
+
+@media only screen and (max-width: 992px) {
+  .page{
+    width: 100%;
+  }
+  .feedbackContainer{
+     width: 90%;
+  }
+  .formMain {
+    width: 90%;
+    margin: auto;
+  }
+  .concentCheckbox{
+    transform: scale(1.8);
+  }
+  .concentDiv{
+    font-size: 14px;
+  }
+}

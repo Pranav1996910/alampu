@@ -1,10 +1,9 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
+  min-height: 90svh;
   width: 80%;
   margin: auto;
-
 }
 
 .aboutUsTitle {

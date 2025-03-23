@@ -15,6 +15,17 @@
 .termsDescription{
   font-size: 14px;
   line-height: 1.4;
-  list-style-position: inside;
-  padding-bottom: 10svh;
+  list-style-position: outside;
+  padding-bottom: 5svh;
+  margin-left:20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .page {
+    width: 90%;
+  }
+  .termsTitle {
+    font-size: 24px;
+    margin: 20px 0px 20px 0px;
+  }
 }

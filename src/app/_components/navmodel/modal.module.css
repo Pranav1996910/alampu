@@ -1,0 +1,56 @@
+.modalWrapper {
+  width: 100%;
+  height: 100svh;
+}
+
+.modal {
+  background: white;
+  height:100%;
+  width:100%;
+  padding: 15px;
+}
+
+.modalOverlay {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalBody {
+  padding-top: 10px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  width: 90%;
+  margin: auto;
+}
+.navLinks{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 2;
+  padding-top: 20px;
+}
+.logoContainer{
+  width: 40%;
+}
+.navLink:hover{
+  font-weight: bold;
+}
+.logo{
+  width: 90px;
+  height: auto
+}
