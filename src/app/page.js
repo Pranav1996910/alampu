@@ -14,12 +14,106 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { RxCrossCircled } from "react-icons/rx";
 import { IoMdPricetags } from "react-icons/io";
 import { MdOutlineTimer } from "react-icons/md";
+
+// Explore icon imports
+import { PiTShirtFill } from "react-icons/pi";
+import { IoGlassesSharp } from "react-icons/io5";
+import { FaMugSaucer } from "react-icons/fa6";
+import { FaStapler } from "react-icons/fa6";
+import { ImHeadphones } from "react-icons/im";
+import { BsGiftFill } from "react-icons/bs";
+
+
 export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.bannerImageMain}></div>
       <div className={styles.mainBody}>
         <Services />
+        <div className={styles.exploreSection}>
+          <div className={styles.exploreMainTitle}>
+            Explore a Wide Range of Personalized Bulk Gifts for Employees,
+            Clients, and Office Staff
+          </div>
+          <div className={styles.exploreTitleDescription}>
+            At <b>Alampu</b>, we specialize in customized corporate gifting
+            solutions for every occasion, be it a work anniversary, festive
+            celebration, or employee appreciation event.
+          </div>
+          <div className={styles.uniqueGridExplore}>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <PiTShirtFill  className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Apparel</div>
+              <div className={styles.exploreDescription}>
+                From <b>branded t-shirts</b> to hoodies, jackets, and caps, we
+                offer fully customizable apparel to suit individual preferences.
+              </div>
+            </div>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <IoGlassesSharp className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Accessories</div>
+              <div className={styles.exploreDescription}>
+                Make a statement with <b>stylish travel bags</b>, sunglasses,
+                and a variety of accessories designed to impress and delight
+              </div>
+            </div>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <FaMugSaucer className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Home & Living</div>
+              <div className={styles.exploreDescription}>
+                Enhance any space with{" "}
+                <b>
+                  personalized photo frames, elegant lunch boxes, and decorative
+                  wall clocks
+                </b>
+                — perfect gifts for a modern workspace or home.
+              </div>
+            </div>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <FaStapler className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Office Essentials</div>
+              <div className={styles.exploreDescription}>
+                Boost productivity with custom <b>office stationery</b> that is
+                both practical and stylish—an ideal gift for dedicated
+                employees.
+              </div>
+            </div>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <ImHeadphones className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Gadgets</div>
+              <div className={styles.exploreDescription}>
+                For tech enthusiasts, our range includes{" "}
+                <b>
+                  earphones, USB hubs, smart devices, and other innovative
+                  electronics
+                </b>{" "}
+                to keep them connected.
+              </div>
+            </div>
+            <div className={styles.uinqueGridCellExplore}>
+              <div>
+                <BsGiftFill className={styles.uniqueIconsExplore} />
+              </div>
+              <div className={styles.exploreTitle}>Gift Hampers</div>
+              <div className={styles.exploreDescription}>
+                Looking for a versatile gifting solution? Our{" "}
+                <b>custom gift hampers and corporate gift vouchers</b> offer a
+                variety of thoughtful products tailored for employees and
+                clients.
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.clientSection}>
           <div className={styles.clientSectionTitle}>What Makes Us Unique</div>
           <div className={styles.uniqueGrid}>
