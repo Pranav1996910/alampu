@@ -1,42 +1,96 @@
+"use client";
 import styles from "./page.module.css";
 import { IoLocation } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
+import Form from "next/form";
 
 export default function Page() {
+  const onSubmit = (event) => {};
   return (
     <div className={styles.page}>
       <div className={styles.contactTitle}>Contact Us</div>
-      <div className={styles.contactNavigation}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.6215035396913!2d77.51253700021776!3d12.965428565509335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d0071c00c0d%3A0x35e4c78f2e5cb99f!2sManasa!5e0!3m2!1sde!2sde!4v1742697396816!5m2!1sde!2sde"
-          width="600"
-          height="450"
-          className={styles.contactMap}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div className={styles.contactForm}>
+        <div className={styles.getInTouch}>GET IN TOUCH</div>
+        <Form className={styles.formMain} onSubmit={onSubmit}>
+          <div className={styles.field}>
+            <input
+              className={styles.inputField}
+              type="text"
+              name="fullname"
+              id="fullname"
+              required
+              placeholder="Example: Rohit Sharma"
+            />
+            <label htmlFor="fullname" className={styles.labelField}>
+              Full Name
+            </label>
+          </div>
+          <div className={styles.field}>
+            <input
+              className={styles.inputField}
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              type="email"
+              name="email"
+              required
+              id="email"
+              placeholder="Example: xyz@company.com"
+            />
+            <label htmlFor="email" className={styles.labelField}>
+              Email
+            </label>
+          </div>
+          <div className={styles.field}>
+            <input
+              className={styles.inputField}
+              type="text"
+              name="number"
+              id="number"
+              required
+              placeholder="Example: +91 8765432109"
+            />
+            <label htmlFor="number" className={styles.labelField}>
+              Phone
+            </label>
+          </div>
+          <div className={styles.field}>
+            <textarea
+              className={styles.addressField}
+              type="text"
+              name="message"
+              id="message"
+              required
+              placeholder="write your message here.."
+            />
+            <label htmlFor="message" className={styles.labelField}>
+              Address
+            </label>
+          </div>
+          <div className={styles.submitDiv}>
+            <button className={styles.submitButton} type="submit">
+              Submit
+            </button>
+          </div>
+        </Form>
       </div>
-      <div className={styles.contactMain}>
-        <div className={styles.contactAddress}>
-          <div className={styles.locationIcon}>
-            <IoLocation />
+      <div className={styles.contactContainer}>
+        <div className={styles.contactMain}>
+          <div className={styles.contactAddress}>
+            <div className={styles.locationIcon}>
+              <IoLocation />
+            </div>
+            <div className={styles.addressMain}>
+              <span className={styles.addressTitle}>Location: </span>
+              <span className={styles.addressDetail}>
+                <b>Bengaluru</b>
+              </span>
+            </div>
           </div>
-          <div className={styles.addressMain}>
-            <span className={styles.addressTitle}>Address: </span>
-            <span className={styles.addressDetail}>
-              2nd A MAIN, VINAYAKA of Business: 220,MANASA, LAYOUT, NAGARABHAVI
-              2nd STAGE, Bengaluru Urban, Karnataka, 560072
-            </span>
-          </div>
-        </div>
-        <div className={styles.contactEmailMain}>
           <div className={styles.contactEmail}>
             <div className={styles.locationIcon}>
               <MdEmail />
             </div>
-            <div className={styles.addressMain}>
+            <div className={styles.emailMain}>
               <span className={styles.addressTitle}>Email us: </span>
               <span className={styles.addressDetail}>
                 <a

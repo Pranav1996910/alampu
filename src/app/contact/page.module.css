@@ -16,19 +16,21 @@
 .contactMap{
   width: 100%
 }
-.contactMain{
-  display: flex;
+.contactContainer{
   margin-top: 20px;
 }
-.contactAddress{
+.contactMain{
   display: flex;
-  width: 46%;
+  flex-direction: column;
   margin: 20px 2% 10px 2%;
   padding: 40px 20px 40px 20px;
   border: 1px solid #EAEDE8;
-  border-radius: 4px;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
+}
+.contactAddress{
+  display: flex;
 }
 .contactEmailMain{
   display: flex;
@@ -49,7 +51,7 @@
   width: max-content;
   font-weight: bold;
 }
-.addressMain{
+.emailMain, .addressMain{
   display: flex;
   align-items: center;
   width: 100%;
@@ -62,6 +64,134 @@
 }
 .locationIcon{
   font-size: 22px;
+}
+.submitDiv{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 40px; 
+}
+.submitButton {
+  width: fit-content;
+  cursor: pointer;
+  background-color: #9c1613;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+  padding: 12px 30px 12px 30px;
+  justify-content: center;
+}
+.labelField::after {
+  content: "*";
+  color: #9c1613;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  position: relative;
+}
+.labelField, .inputField, .addressField{
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.inputField {
+  font-size: 16px;
+  border: 0;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  cursor: text;
+  border-radius: 8px;
+  padding-left: 10px;
+  width: 100%;
+  resize: vertical;
+  min-height: 40px;
+}
+.addressField{
+  font-size: 16px;
+  border: 0;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  cursor: text;
+  border-radius: 8px;
+  padding-left: 10px;
+  width: 100%;
+  resize: vertical;
+  min-height: 80px;
+}
+.inputField:focus, .addressField:focus{
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+.labelField {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  order: -1;
+}
+.getInTouch{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d4d4d4a8;
+
+}
+.contactForm{
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+}
+.inputField:placeholder-shown + .labelField {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+}
+
+.addressField:placeholder-shown + .labelField {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.2);
+}
+.inputField::-webkit-input-placeholder,.addressField::-webkit-input-placeholder,.feedbackInputField::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.inputField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.inputField:not(:placeholder-shown) + .labelField,
+.inputField:focus + .labelField {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+.addressField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.addressField:not(:placeholder-shown) + .labelField,
+.addressField:focus + .labelField {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
@@ -83,20 +213,23 @@
   }
   .contactMain{
     width: 100%;
+    padding: 20px 10px 20px 10px;
+  }
+  .contactEmail{
+    width: 100%;
+  }
+  .contactContainer{
+    width: 100%;
     flex-wrap: wrap;
   }
   .contactAddress{
     width: 100%;
-    padding: 20px 10px 20px 10px;
   }
   .locationIcon{
     height: 100%;
   }
   .addressMain{
-    display: block;
-  }
-  .addressTitle{
-    width: 90%;
+    display: flex;
   }
   .contactEmailMain{
     display: flex;
@@ -106,9 +239,26 @@
     width: 100%;
   }
   .addressDetail{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     line-height: 2;
+  }
+  .feedbackContainer{
+     width: 90%;
+  }
+  .formMain {
+    margin: auto;
+  }
+  .concentCheckbox{
+    transform: scale(1.8);
+  }
+  .concentDiv{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .emailMain{
+    display: block;
   }
 }

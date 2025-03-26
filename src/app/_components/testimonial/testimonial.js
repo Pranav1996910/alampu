@@ -31,11 +31,11 @@ export default function Testimonial() {
         <div className={styles.testimonialCardMain}>
           <div className={styles.testimonialCard}>
             <div className={styles.testimonialDescription}>
-              "Thank you so much your team mate have done a incredible job. I
+              "Thank you so much, your team mate have done an incredible job. I
               love the way you took responsibility, shopping with Alampu was
               great experience you people have considered every detail I had
               mentioned about to curtain the gift box it was amazing and
-              delivered it on time.. Leading and shaping a brand new team and
+              delivered it on time. Leading and shaping a brand new team and
               taking new responsibility is a real challenge work."
             </div>
             <div className={styles.testimonialBy}>- Anjalin Janifer</div>
@@ -54,7 +54,7 @@ export default function Testimonial() {
         <div className={styles.testimonialCardMain}>
           <div className={styles.testimonialCard}>
             <div className={styles.testimonialDescription}>
-              "Good service and creative gifts indeed Overall i have had a good
+              "Good service and creative gifts indeed. Overall i have had a good
               experience with Alampu! Kudos!"
             </div>
             <div className={styles.testimonialBy}>- Shwetha R</div>

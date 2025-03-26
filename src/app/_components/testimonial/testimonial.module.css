@@ -19,6 +19,7 @@
 }
 .testimonialDescription{
   font-size: 14px;
+  font-style: italic!important;
 }
 .testimonialBy{
   float: right;

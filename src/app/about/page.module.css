@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 90svh;
+  width: 100%;
+}
+.aboutContent{
   width: 80%;
   margin: auto;
 }
@@ -16,6 +19,15 @@
   font-size: 16px;
 }
 
+.bannerImageMain{
+  width: 50%;
+  height: 60svh!important;
+  background-image: url('/images/about-desk.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
 .meetTeamTitle{
   font-size: 24px;
   font-weight: bold;
@@ -25,4 +37,52 @@
 .meetOurTeamDescription{
   font-size: 16px;
   margin: 0px 0px 40px 0px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .bannerImageMain{
+    background-image: url('/images/about-desk.png');
+    height: 60svh!important;
+    background-size: contain;
+    width: 50%;
+  }
+}
+@media only screen and (max-aspect-ratio: 16/10) {
+
+  .bannerImageMain{
+    background-image: url('/images/about-desk.png');
+    height: 50svh!important;
+    background-size: contain;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 900px) {
+
+  .bannerImageMain{
+    background-image: url('/images/about.png');
+    height: 60svh!important;
+    background-size: contain;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .bannerImageMain{
+    background-image: url('/images/about.png');
+    height: 40svh!important;
+    background-size: contain;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+  .bannerImageMain{
+    background-image: url('/images/about.png');
+    height: 43svh!important;
+    background-size: contain;
+    width: 95%;
+  }
 }

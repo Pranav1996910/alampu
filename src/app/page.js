@@ -67,7 +67,7 @@ export default function Home() {
               </div>
               <div className={styles.exploreTitle}>Home & Living</div>
               <div className={styles.exploreDescription}>
-                Enhance any space with{" "}
+                Enhance any space with
                 <b>
                   personalized photo frames, elegant lunch boxes, and decorative
                   wall clocks
@@ -92,11 +92,11 @@ export default function Home() {
               </div>
               <div className={styles.exploreTitle}>Gadgets</div>
               <div className={styles.exploreDescription}>
-                For tech enthusiasts, our range includes{" "}
+                For tech enthusiasts, our range includes
                 <b>
                   earphones, USB hubs, smart devices, and other innovative
                   electronics
-                </b>{" "}
+                </b>
                 to keep them connected.
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <div className={styles.exploreTitle}>Gift Hampers</div>
               <div className={styles.exploreDescription}>
-                Looking for a versatile gifting solution? Our{" "}
+                Looking for a versatile gifting solution? Our
                 <b>custom gift hampers and corporate gift vouchers</b> offer a
                 variety of thoughtful products tailored for employees and
                 clients.
