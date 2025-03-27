@@ -22,9 +22,10 @@
 .contactMain{
   display: flex;
   flex-direction: column;
-  margin: 20px 2% 10px 2%;
+  margin: 20px 0px 10px 0px;
   padding: 40px 20px 40px 20px;
   border: 1px solid #EAEDE8;
+  background-color: #EAEDE8;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
@@ -40,6 +41,10 @@
   padding: 40px 20px 40px 20px;
   border: 1px solid #EAEDE8;
   border-radius: 4px;
+}
+
+.formMain {
+  margin: auto;
 }
 .contactEmail{
   display: flex;
@@ -141,14 +146,16 @@
   font-weight: 400;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid #d4d4d4a8;
-
+  border-bottom: 1px solid #d4d4d4;
 }
 .contactForm{
   width: 100%;
   padding: 20px;
   border: 1px solid #d4d4d4;
   border-radius: 12px;
+  background-color: #EAEDE8;
+  max-width: 1000px;
+  margin: auto;
 }
 .inputField:placeholder-shown + .labelField {
   cursor: text;
@@ -193,7 +200,35 @@
   transform: translate(0, 0) scale(1);
   cursor: pointer;
 }
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #9c1613;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
 @media only screen and (max-width: 992px) {
   .contactTitle {
     font-size: 24px;
@@ -213,7 +248,7 @@
   }
   .contactMain{
     width: 100%;
-    padding: 20px 10px 20px 10px;
+    margin: 0px;
   }
   .contactEmail{
     width: 100%;

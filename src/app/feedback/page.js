@@ -2,9 +2,50 @@
 import styles from "./page.module.css";
 import React from "react";
 import Form from "next/form";
+import { useState } from "react";
 
 export default function Page() {
-  const onSubmit = (event) => {};
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [designation, setDesignation] = useState("");
+  const [dob, setDob] = useState("");
+  const [number, setNumber] = useState("");
+  const [address, setAddress] = useState("");
+  const [feedback, setFeedback] = useState("");
+  const [status, setStatus] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const response = await fetch("/api/feedback", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fullname, email, company, designation, dob, number, address, feedback }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setStatus("Message sent successfully!");
+    } else {
+      setStatus(`Error: ${data.error}`);
+    }
+    setShowPopup(true);
+    setTimeout(() => {
+      setEmail("");
+      setCompany("");
+      setDesignation("");
+      setDob("");
+      setNumber("");
+      setAddress("");
+      setFeedback("");
+      setShowPopup(false);
+    }, 2000);
+  };
 
   return (
     <div className={styles.page}>
@@ -19,6 +60,8 @@ export default function Page() {
               id="fullname"
               required
               placeholder="Example: Rohit Sharma"
+              value={fullname}
+              onChange={(e) => setFullname(e.target.value)}
             />
             <label htmlFor="fullname" className={styles.labelField}>
               Full Name
@@ -33,6 +76,8 @@ export default function Page() {
               required
               id="email"
               placeholder="Example: xyz@company.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="email" className={styles.labelField}>
               Email
@@ -46,6 +91,8 @@ export default function Page() {
               id="companyName"
               required
               placeholder="Example: xyz"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
             />
             <label htmlFor="companyName" className={styles.labelField}>
               Company Name
@@ -59,6 +106,8 @@ export default function Page() {
               id="designation"
               required
               placeholder="Example: manager"
+              value={designation}
+              onChange={(e) => setDesignation(e.target.value)}
             />
             <label htmlFor="designation" className={styles.labelField}>
               Designation
@@ -73,6 +122,8 @@ export default function Page() {
               pattern="^\d{2}-\d{2}-\d{4}$"
               required
               placeholder="Example: 13-09-1996"
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
             />
             <label htmlFor="dob" className={styles.labelField}>
               Date Of Birth
@@ -86,6 +137,8 @@ export default function Page() {
               id="number"
               required
               placeholder="Example: +91 8765432109"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
             />
             <label htmlFor="number" className={styles.labelField}>
               WhatsApp Number
@@ -104,6 +157,8 @@ export default function Page() {
                 Connaught House,
                 Bengaluru 560072
                 IND"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
             />
             <label htmlFor="address" className={styles.labelField}>
               Address
@@ -117,6 +172,8 @@ export default function Page() {
               required
               id="feedback"
               placeholder="write your feedback here......."
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
             />
             <label htmlFor="feedback" className={styles.labelField}>
               Feedback
@@ -142,6 +199,13 @@ export default function Page() {
           </div>
         </Form>
       </div>
+      {showPopup && (
+        <div className={styles.popupContainer}>
+          <div className={styles.popup}>
+            <p>{status}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

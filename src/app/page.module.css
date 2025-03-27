@@ -108,12 +108,14 @@
    width: 90%;
   }
   .uniqueGrid{
+    padding: 0px;
     grid-template-columns: auto auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .exploreMainTitle{
     font-size: 20px;
     text-align: center;
+    padding: 0px 10px 0px 10px;
   }
   .exploreTitleDescription{
     display: none;
@@ -123,6 +125,10 @@
   }
   .uinqueGridCellExplore{
     padding: 30px 20px 30px 20px;
+  }
+  .uinqueGridCell{
+    border: 1px solid rgba(107, 107, 107, 0.284);
+    padding: 20px 15px 20px 15px;
   }
 
 }
