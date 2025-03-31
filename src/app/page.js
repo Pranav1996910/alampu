@@ -23,7 +23,6 @@ import { FaStapler } from "react-icons/fa6";
 import { ImHeadphones } from "react-icons/im";
 import { BsGiftFill } from "react-icons/bs";
 
-
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -43,7 +42,7 @@ export default function Home() {
           <div className={styles.uniqueGridExplore}>
             <div className={styles.uinqueGridCellExplore}>
               <div>
-                <PiTShirtFill  className={styles.uniqueIconsExplore} />
+                <PiTShirtFill className={styles.uniqueIconsExplore} />
               </div>
               <div className={styles.exploreTitle}>Apparel</div>
               <div className={styles.exploreDescription}>
@@ -69,8 +68,8 @@ export default function Home() {
               <div className={styles.exploreDescription}>
                 Enhance any space with
                 <b>
-                  personalized photo frames, elegant lunch boxes, and decorative
-                  wall clocks
+                &nbsp;personalized photo frames, elegant lunch boxes, and decorative
+                  wall clocks&nbsp;
                 </b>
                 — perfect gifts for a modern workspace or home.
               </div>
@@ -94,8 +93,8 @@ export default function Home() {
               <div className={styles.exploreDescription}>
                 For tech enthusiasts, our range includes
                 <b>
-                  earphones, USB hubs, smart devices, and other innovative
-                  electronics
+                  &nbsp; earphones, USB hubs, smart devices, and other innovative
+                  electronics&nbsp;
                 </b>
                 to keep them connected.
               </div>
@@ -107,7 +106,7 @@ export default function Home() {
               <div className={styles.exploreTitle}>Gift Hampers</div>
               <div className={styles.exploreDescription}>
                 Looking for a versatile gifting solution? Our
-                <b>custom gift hampers and corporate gift vouchers</b> offer a
+                <b>&nbsp;custom gift hampers and corporate gift vouchers</b> offer a
                 variety of thoughtful products tailored for employees and
                 clients.
               </div>
