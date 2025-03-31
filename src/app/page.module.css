@@ -95,6 +95,7 @@
   font-weight: bold;
 }
 .exploreDescription{
+  height: -webkit-fill-available;
   font-size: 15px;
   margin-top: 10px;
   font-weight: normal;

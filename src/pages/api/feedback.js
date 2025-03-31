@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.RECIPIENT_EMAIL,
-      subject: 'New Contact Form Submission',
+      subject: 'New Feedback Form Submission',
       text: `
         Full Name: ${fullname}
         Email: ${email}
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     };
 
     try {
-      // await transporter.sendMail(mailOptions);
+      await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Feedback sent successfully' });
     } catch (error) {
       console.error('Error sending email:', error);
