@@ -30,7 +30,7 @@ export default function Services() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Know More
+              Download Catalog
             </Link>
           </div>
         </div>
