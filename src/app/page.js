@@ -40,7 +40,7 @@ export default function Home() {
             celebration, or employee appreciation event.
           </div>
           <div className={styles.uniqueGridExplore}>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <PiTShirtFill className={styles.uniqueIconsExplore} />
               </div>
@@ -50,7 +50,7 @@ export default function Home() {
                 offer fully customizable apparel to suit individual preferences.
               </div>
             </div>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <IoGlassesSharp className={styles.uniqueIconsExplore} />
               </div>
@@ -60,7 +60,7 @@ export default function Home() {
                 and a variety of accessories designed to impress and delight
               </div>
             </div>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <FaMugSaucer className={styles.uniqueIconsExplore} />
               </div>
@@ -74,7 +74,7 @@ export default function Home() {
                 — perfect gifts for a modern workspace or home.
               </div>
             </div>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <FaStapler className={styles.uniqueIconsExplore} />
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
                 employees.
               </div>
             </div>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <ImHeadphones className={styles.uniqueIconsExplore} />
               </div>
@@ -99,7 +99,7 @@ export default function Home() {
                 to keep them connected.
               </div>
             </div>
-            <div className={styles.uinqueGridCellExplore}>
+            <div className={styles.uniqueGridCellExplore}>
               <div>
                 <BsGiftFill className={styles.uniqueIconsExplore} />
               </div>
@@ -116,67 +116,67 @@ export default function Home() {
         <div className={styles.clientSection}>
           <div className={styles.clientSectionTitle}>What Makes Us Unique</div>
           <div className={styles.uniqueGrid}>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <IoMdTimer className={styles.uniqueIcons} />
               </div>
               <div>Over 3 Years of Industry Experience</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <FaPeopleArrows className={styles.uniqueIcons} />
               </div>
               <div>Serving 100+ Corporate Clients</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <MdOutlineShoppingBag className={styles.uniqueIcons} />
               </div>
               <div>Offering 5000+ Unique Products</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <IoMdPricetags className={styles.uniqueIcons} />
               </div>
               <div>Options Available for Every Budget</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <RxCrossCircled className={styles.uniqueIcons} />
               </div>
               <div>No Minimum Order Requirement </div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <TbTruckDelivery className={styles.uniqueIcons} />
               </div>
               <div>Fast-Track Delivery Services Available</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <GrUserManager className={styles.uniqueIcons} />
               </div>
               <div>Personalized Branding with Your Logo</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <HiLightBulb className={styles.uniqueIcons} />
               </div>
               <div>Perfect Gifting Ideas for Every Occasion</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <FaSearch className={styles.uniqueIcons} />
               </div>
               <div>Uncompromised Quality</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <FaEdit className={styles.uniqueIcons} />
               </div>
               <div>Carefully Curated Selection</div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <IoEarth className={styles.uniqueIcons} />
               </div>
@@ -185,7 +185,7 @@ export default function Home() {
                 Shipping
               </div>
             </div>
-            <div className={styles.uinqueGridCell}>
+            <div className={styles.uniqueGridCell}>
               <div>
                 <MdOutlineTimer className={styles.uniqueIcons} />
               </div>

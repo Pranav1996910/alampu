@@ -42,16 +42,16 @@
   margin-top: 30px;
   justify-content: center;
 }
-.uniqueGridExplore{
+.uniqueGridExplore {
   display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 10px;
   width: 100%;
   margin-top: 30px;
   justify-content: center;
+  overflow-x: hidden;
 }
-.uinqueGridCell{
+.uniqueGridCell{
   background-color: #EAEDE8;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@
   text-align: center;
   justify-content: center;
 }
-.uinqueGridCellExplore{
+.uniqueGridCellExplore {
   display: flex;
   flex-direction: column;
   padding: 40px 30px 40px 30px;
@@ -72,8 +72,9 @@
   font-weight: bold;
   text-align: center;
   justify-content: center;
+  overflow-wrap: break-word;
 }
-.uinqueGridCell:hover{
+.uniqueGridCell:hover{
   border: 1px solid #9c1613;
   transform: scale(1.1);
 }
@@ -124,12 +125,15 @@
   .uniqueGridExplore{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .uinqueGridCellExplore{
+  .uniqueGridCellExplore{
     padding: 30px 20px 30px 20px;
   }
-  .uinqueGridCell{
+  .uniqueGridCell{
     border: 1px solid rgba(107, 107, 107, 0.284);
     padding: 20px 15px 20px 15px;
+  }.uniqueGridExplore {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 5px; /* reduced padding for smaller screens */
   }
 
 }
