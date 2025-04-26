@@ -42,6 +42,7 @@
   margin-top: 30px;
   justify-content: center;
 }
+
 .uniqueGridExplore {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,39 +114,43 @@
 }
 
 @media only screen and (max-width: 1034px) {
-  .mainBody{
-   width: 90%;
+  .mainBody {
+    width: 90%;
   }
-  .uniqueGrid{
+
+  .uniqueGrid {
     padding: 0px;
-    grid-template-columns: auto auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .exploreMainTitle{
+
+  .exploreMainTitle {
     font-size: 20px;
     text-align: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px;
   }
-  .exploreTitleDescription{
+
+  .exploreTitleDescription {
     display: none;
   }
-  .uniqueGridExplore{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .uniqueGridCell{
-    border: 1px solid rgba(107, 107, 107, 0.284);
-    padding: 20px 15px 20px 15px;
-  }
+
   .uniqueGridExplore {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     padding: 0px 10px;
-    gap: 10px; /* smaller gap on mobile */
   }
 
   .uniqueGridCellExplore {
-    padding: 20px 10px;
-    height: auto; /* important: don't fix the height */
-    min-height: unset; /* remove min height constraints */
+    width: 90%;
+    max-width: 400px;
+    padding: 20px 15px;
+    height: auto;
+    min-height: unset;
   }
 
+  .uniqueGridCell {
+    border: 1px solid rgba(107, 107, 107, 0.284);
+    padding: 20px 15px;
+  }
 }
