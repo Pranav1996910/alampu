@@ -44,12 +44,30 @@
 }
 .uniqueGridExplore {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  margin-top: 30px;
-  justify-content: center;
+  margin: 0 auto;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  max-width: 100vw;
   overflow-x: hidden;
+  gap: 20px; /* Important: add gap to control spacing properly */
+}
+
+.uniqueGridCellExplore {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  word-break: break-word;
+  min-height: auto; /* fix min height */
+  height: auto; /* allow it to shrink naturally */
 }
 .uniqueGridCell{
   background-color: #EAEDE8;
@@ -62,17 +80,6 @@
   font-weight: bold;
   text-align: center;
   justify-content: center;
-}
-.uniqueGridCellExplore {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 30px 40px 30px;
-  width: 100%;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  justify-content: center;
-  overflow-wrap: break-word;
 }
 .uniqueGridCell:hover{
   border: 1px solid #9c1613;
@@ -125,15 +132,20 @@
   .uniqueGridExplore{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .uniqueGridCellExplore{
-    padding: 30px 20px 30px 20px;
-  }
   .uniqueGridCell{
     border: 1px solid rgba(107, 107, 107, 0.284);
     padding: 20px 15px 20px 15px;
-  }.uniqueGridExplore {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding: 5px; /* reduced padding for smaller screens */
+  }
+  .uniqueGridExplore {
+    grid-template-columns: 1fr;
+    padding: 0px 10px;
+    gap: 10px; /* smaller gap on mobile */
+  }
+
+  .uniqueGridCellExplore {
+    padding: 20px 10px;
+    height: auto; /* important: don't fix the height */
+    min-height: unset; /* remove min height constraints */
   }
 
 }
