@@ -57,7 +57,7 @@
 .uniqueGridCellExplore {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 30px 20px 30px 20px;
   width: 100%;
   box-sizing: border-box;
   font-size: 14px;
@@ -66,8 +66,6 @@
   justify-content: flex-start;
   align-items: center;
   word-break: break-word;
-  min-height: auto; /* fix min height */
-  height: auto; /* allow it to shrink naturally */
 }
 .uniqueGridCell{
   background-color: #EAEDE8;
@@ -143,10 +141,7 @@
   }
 
   .uniqueGridCellExplore {
-    width: 90%;
-    max-width: 400px;
-    padding: 20px 15px;
-    height: auto;
+    padding: 20px 15px 20px 15px;
   }
 
   .uniqueGridCell {
